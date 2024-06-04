@@ -3,7 +3,7 @@ import {  addcomment, deletecomment, getcomment, updatecomment } from "./comment
 
 export const routercomment= Router()
 
- routercomment.post('/addpost',addcomment)
+ routercomment.post('/addcomment',addcomment)
 routercomment.get('/getcomment',getcomment)
 
 routercomment.patch('/updatecomment/:id',updatecomment)

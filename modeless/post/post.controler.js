@@ -84,7 +84,7 @@ export const getonepost = async (req, res) => {
         ]
     });
 
-  return post[0]  ? res.json({ msg:"done", post }) : res.json({ msg: ` ${id}  not found tjis post ` })
+  return post[0] ? res.json({ msg:"done", post }) : res.json({ msg: ` ${id}  not found tjis post ` })
 
    
    } catch (error) {
