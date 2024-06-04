@@ -1,0 +1,21 @@
+{
+  "name": "ass_six",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node  --experimental-specifier-resolution=node index.js",
+    "start:watch": "node --watch index.js"
+  },
+  "engines": {"node": "v20.12.2"},
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "mysql2": "^3.9.8",
+    "sequelize": "^6.37.3"
+  }
+}
