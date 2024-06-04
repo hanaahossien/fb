@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { addPost, deleteePost, getPost, getonepost, updatePost } from "./post.controler.js";
+import { addPost, deleteePost, getPost, getall, getonepost, updatePost } from "./post.controler.js";
 
 export const routerpost= Router();
 
@@ -15,3 +15,6 @@ routerpost.patch('/update/:id',updatePost)
 routerpost.put('/delete/:id',deleteePost)
 
 routerpost.get('/getonepost/:id',getonepost)
+
+
+routerpost.get('/getall/:UserId/:postId',getall)
