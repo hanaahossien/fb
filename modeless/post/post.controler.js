@@ -83,7 +83,10 @@ export const getonepost = async (req, res) => {
         },
         ]
     });
-    res.json({ post })
+
+  return post[0]  ? res.json({ msg:"done", post }) : res.json({ msg: ` ${id}  not found tjis post ` })
+
+   
    } catch (error) {
     console.log(error)
    }
